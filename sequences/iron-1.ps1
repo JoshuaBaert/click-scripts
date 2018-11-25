@@ -6,7 +6,7 @@ Write-Host 'press Ctrl + C to stop'
 Start-Sleep -Seconds 7
 
 $j = 0
-while ($j -lt 3) {
+while ($j -lt 100) {
     Write-Host 'Returning from bank'
     click 1865 358 21
     click 1691 376 10
