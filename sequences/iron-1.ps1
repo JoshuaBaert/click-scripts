@@ -20,7 +20,7 @@ while ($j -lt 100) {
     for ($i = 0; $i -lt 7; $i++) {
         write-host "round $i"
         click 1104 552 $miningTime
-        click 849 632 $miningTime
+        click 849 632 $miningTime + 1
         click 958 509 $miningTime
 
         # Reset
