@@ -21,9 +21,8 @@
 #     if( $waitTime ) { Start-Sleep -Seconds $waitTime }
 # }
 
-Import-Module ..\local.psm1
-
-Import-Module ..\utilites\mouse-click.psm1
+$baseDir = Split-Path $PSScriptRoot
+Import-Module "$baseDir\utilities\mouse-click.psm1"
 
 Write-Host 'press Ctrl + C to stop'
 
