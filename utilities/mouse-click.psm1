@@ -2,7 +2,7 @@
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") 
 function click {
     param ( $x, $y, $waitTime )
-    $mouseClick = Get-Content -Path "C:\code\personal\click-test\mouse-click.cs"
+    $mouseClick = Get-Content -Path "$PSScriptRoot\mouse-click.cs"
     $mouseClick = $mouseClick -replace "`n",' '
 
     $SendMouseClick = Add-Type -memberDefinition "$mouseClick" -name "Win32MouseEventNew" -namespace Win32Functions -passThru
