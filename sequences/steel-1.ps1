@@ -4,11 +4,11 @@ Import-Module "$baseDir\utilities\mouse-right-click.psm1"
 Import-Module "$baseDir\utilities\mouse-single-click.psm1"
 Import-Module "$baseDir\utilities\press-keys.psm1"
 
+Write-Host 'press Ctrl + C to stop'
+Start-Sleep -Seconds 7
 
 $j = 0
 while ($j -lt 100) {
-    Write-Host 'press Ctrl + C to stop'
-    Start-Sleep -Seconds 7
 
     Write-Host 'Stocking Up'
     rightClick 654 334 2
